@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build main",
+        "type": "shell",
+        "command": "g++",
+
+        ///// replace the file .cpp /////
+        "args": [
+          "-g",
+          "main.cpp",
+          "Dog.cpp",
+          "-o",
+          "main"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+      }
+    ]
+  }
+  
